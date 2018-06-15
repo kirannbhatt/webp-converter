@@ -7,7 +7,7 @@ Converts the jpg format images to webp format images.
 ```
 yarn
 ```
-* OR,
+or,
 ```
 npm install
 ```
@@ -17,7 +17,7 @@ npm install
 ```
 yarn start
 ```
-* OR,
+or,
 ```
 npm start
 ```
