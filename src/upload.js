@@ -1,5 +1,6 @@
 import multer from 'multer'
 import path from 'path'
+import checkFileType from './checkFileType'
 
 const storage = multer.diskStorage({
     destination: './public',
@@ -9,7 +10,10 @@ const storage = multer.diskStorage({
 })
 
 const upload = multer({
-    storage: storage
+    storage: storage,
+    fileFilter: (req, res, cb) => {
+        checkFileType(file, cb)
+    }
 }).single('image')
 
 export default upload
