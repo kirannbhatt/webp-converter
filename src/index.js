@@ -1,5 +1,5 @@
 import app from './app'
-import { } from 'dotenv/config'
+import {} from 'dotenv/config'
 
 app.listen(process.env.APP_PORT, (err) => {
 	if (err) {

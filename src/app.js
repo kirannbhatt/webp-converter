@@ -17,12 +17,12 @@ app.get('/', (req, res) => {
 
 app.post('/images', (req, res) => {
 	upload(req, res, (err) => {
-		if(err) {
+		if (err) {
 			res.render('index', {
 				msg: err
 			})
 		} else {
-			if(res.file == undefined) {
+			if (res.file == undefined) {
 				res.render('index', {
 					msg: 'Error no file selected'
 				})
